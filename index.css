@@ -1,0 +1,235 @@
+/*General*/
+body
+{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1
+{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;    
+    color: #4ABDAC;
+}
+
+canvas
+{
+    background-color: #DDDDDD;
+}
+
+button
+{
+    width: 80%;
+    height: 10%;
+    background: transparent;
+    color: #4ABDAC;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: #4ABDAC solid 1px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 1em 1.5em;
+    cursor: pointer;
+    transition: background-color 0.8s ease-out;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+}
+
+button:hover
+{
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    letter-spacing: 1.5px;
+    background-color: #4ABDAC;
+}
+
+/*Classes*/
+.content
+{
+    width: 950px;
+    height: 800px;
+    background-color: #EEEEEE;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+    box-shadow: 0 0 5px #DDDDDD;
+    border: 1px #DDDDDD solid;
+    border-radius: 5px;
+    transform: translateY(-150px);
+    -webkit-animation: come-in 1s ease forwards;
+    -moz-animation: come-in 1s ease forwards;
+    -o-animation: come-in 1s ease forwards;
+    animation: come-in 1s ease forwards;
+}
+
+.canvas
+{
+    width: 750px;
+    height: 600px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+    border: 1px #CCCCCC solid;
+    border-radius: 5px;
+}
+
+.contentHighscore
+{
+    display: inline-block;
+    width: 300px;
+    height: 800px;
+    background-color: #EEEEEE;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    margin:auto;
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+    box-shadow: 0 0 5px #DDDDDD;
+    border: 1px #DDDDDD solid;
+    border-radius: 5px;
+    transform: translateX(-150px);
+    -webkit-animation: come-in 1s ease forwards;
+    -moz-animation: come-in 1s ease forwards;
+    -o-animation: come-in 1s ease forwards;
+    animation: come-in 1s ease forwards;
+}
+
+.contentTime
+{
+    display: inline-block;
+    width: 300px;
+    height: 800px;
+    background-color: #EEEEEE;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right: 0;
+    margin:auto;
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+    box-shadow: 0 0 5px #DDDDDD;
+    border: 1px #DDDDDD solid;
+    border-radius: 5px;
+    transform: translateX(150px);
+    -webkit-animation: come-in 1s ease forwards;
+    -moz-animation: come-in 1s ease forwards;
+    -o-animation: come-in 1s ease forwards;
+    animation: come-in 1s ease forwards;
+}
+
+.score
+{
+    float: left;
+    margin-left: 100px;
+}
+
+.lives
+{
+    float: right;
+    margin-right: 100px;
+}
+
+.time
+{
+    position:absolute;
+    left:0;
+    right:0;
+    top:45%;
+    bottom:0;
+    margin:auto;
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+}
+
+.progress
+{
+    width: 95%;
+    height: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    border: 1px #4ABDAC solid;
+}
+
+.highscore
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.highscore th, .highscore td
+{
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    text-align: left;
+    padding: 0.5em;
+}
+
+.highscore tr
+{
+    -webkit-transition: background-color 0.7s ease-out;
+    -moz-transition: background-color 0.7s ease-out;
+    -o-transition: background-color 0.7s ease-out;
+    transition: background-color 0.7s ease-out;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    border-collapse: collapse;
+}
+
+.highscore tr:hover
+{
+    background-color: #DDDDDD;
+}
+
+@keyframes come-in
+{
+    to
+    {
+        transform: translateY(0);
+    }
+}
+
+/*IDs*/
+#progress div {
+    height: 100%;
+    text-align: right;
+    line-height: 22px;
+    width: 0;
+    background-color: #4ABDAC;
+    box-sizing: border-box;
+  }
